@@ -72,7 +72,6 @@ public class DrawPanel extends JPanel {
                     double nodeY = node.getY();
                     Line2D l = new Line2D.Double(nodeFromX, nodeFromY, nodeToX, nodeToY);
                     if (l.ptSegDist(nodeX, nodeY) <= nodeSize / 2) {
-                        System.out.println(e.toString() + " intersects with " + node.toString());
                         node.setCollides(true);
                         g2d.setColor(Color.RED);
                     }
@@ -146,7 +145,6 @@ public class DrawPanel extends JPanel {
             nodes.forEach((node, circle) -> {
                 if (circle.getBounds().contains(e.getPoint())) {
                     clickedNode = node;
-                    System.out.println("Node clicked: " + (clickedNode != null ? clickedNode : "null"));
                     return;
                 }
             });
@@ -157,7 +155,6 @@ public class DrawPanel extends JPanel {
                 PathIterator pi = boundary.getPathIterator(new AffineTransform());
                 if (Path2D.intersects(pi, e.getX(), e.getY(), 20, 20)) {
                     clickedLine = edge;
-                    System.out.println("Line clicked: " + (clickedLine != null ? clickedLine : "null"));
                 }
             });
 

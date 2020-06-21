@@ -132,7 +132,6 @@ public class Drawing {
             d.addEdge(e.getNodeFrom(), e.getNodeTo(), cp);
         });
         d.setNodeSize(this.nodeSize);
-        System.out.println(d);
         return d;
     }
 

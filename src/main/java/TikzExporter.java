@@ -24,7 +24,6 @@ public class TikzExporter {
             }
 
             for (Edge e : d.getEdges()) {
-                System.out.println(e.getControlPoint());
                 if (e.getControlPoint() != null) {
                     writer.write("\\draw" + (d.isDirected() ? "[-{Latex[length=2mm]}]" : "") + " (" + e.getNodeFrom() +
                             ") .. controls($(" + df.format(e.getControlPoint().getX()) + "," +

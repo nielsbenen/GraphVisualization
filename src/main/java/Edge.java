@@ -26,7 +26,6 @@ public class Edge {
 
     public void setControlPoint(ControlPoint cp) {
         this.cp = cp;
-        System.out.println("Control point set! " + cp);
     }
 
     public ControlPoint getControlPoint() {
