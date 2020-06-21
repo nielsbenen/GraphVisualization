@@ -1,0 +1,10 @@
+digraph {
+    splines = false;
+    a -> { b c d };
+    b -> { c e };
+    c -> { e };
+    d -> { e f g };
+    e -> h;
+    f -> { h g };
+    g -> { h k };
+}

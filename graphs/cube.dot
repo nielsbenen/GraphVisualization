@@ -1,0 +1,11 @@
+graph {
+    splines = false;
+    a -- { b c e };
+    b -- { a d f };
+    c -- { a d g };
+    d -- { b c h };
+    e -- { a f g };
+    f -- { b e h };
+    g -- { c e h };
+    h -- { d f g };
+}
