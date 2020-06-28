@@ -1,6 +1,4 @@
 import javax.swing.*;
-import javax.swing.text.BadLocationException;
-import javax.swing.text.DefaultStyledDocument;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
@@ -65,6 +63,7 @@ public class GUI extends JFrame {
                 boolean labels = showLabels.isSelected();
                 d.setup(GraphParser.parse(f, lom, nsize, labels));
                 splitPane.setRightComponent(d);
+                splitPane.setDividerLocation(0.2);
             } catch (IOException e1) {
                 e1.printStackTrace();
             }

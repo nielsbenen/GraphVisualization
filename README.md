@@ -1,7 +1,8 @@
-# GraphVisulation
+# GraphVisualization
 A prototypical application which allows a user to create a graph visualization of any input graph
 
-#Requirements
-An installion of GraphViz is required.
+# Requirements
+An installation of GraphViz is required alongside Java 8.
 
-#More to come!
+# How to use
+Clone the github repository and run the included ResearchProject.jar

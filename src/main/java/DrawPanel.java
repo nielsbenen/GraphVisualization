@@ -22,7 +22,7 @@ public class DrawPanel extends JPanel {
 
     public void setup(Drawing d) {
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        double w = dim.getWidth() * 0.7 - 100;
+        double w = dim.getWidth() * 0.8 - 100;
         double h = dim.getHeight() - 100;
         double factor = Math.min(w / d.getWidth(), h / d.getHeight());
         d.scale(factor);
